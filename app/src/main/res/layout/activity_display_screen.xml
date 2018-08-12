@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/blank"
+    android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".display_screen">
+
+    <TextView
+        android:id="@+id/txtGrid3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="H20 usage Calculator"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/txt_display"
+        android:layout_width="227dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="Information on category"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="335dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_height="298dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtGrid3"
+        android:layout_marginBottom="25dp"
+        android:onClick="sendMessage"
+        android:layout_marginStart="-9dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:onClick="sendMessage"
+        android:layout_marginEnd="24dp"
+        android:text="Clear" />
+</RelativeLayout>
